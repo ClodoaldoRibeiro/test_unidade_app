@@ -12,10 +12,7 @@ class Operacoes {
   }
 
   static double div(double valeu1, double value2) {
-    try {
-      return (valeu1 / value2);
-    } catch (e) {
-      new Exception("Não pode correr divição por zero");
-    }
+    if (value2 == 0 || valeu1 == 0) return 0;
+    return (valeu1 / value2);
   }
 }
